@@ -109,7 +109,6 @@ main{
 }
 .facts-card-container .card-stats{
     font-size: 2.8rem;
-    font-weight: 600;
     color: #424242;
     margin: 10px auto;
 }
@@ -137,27 +136,37 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container
+    .teams-container,
+    .facts-card-container
     {
         flex-direction: column;
     }
-    .teams-content{
+    .teams-content
+    {
         padding-left: 20px;
         padding-right: 20px;
     }
     .Teams-img{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns:1fr;
+    }
+    .facts-card-container{
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 /* tablet or medium device */
 @media screen and (min-width:576px) and (max-width: 960px) {
-    header{
+    header, .facts{
         padding: 50px;
     }
     nav,
     .teams-container
     {
         flex-direction: column;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
 }
